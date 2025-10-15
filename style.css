@@ -15,11 +15,11 @@ header.hero {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  gap: 8px;
 }
 
 .logo {
-  width: 90px; /* Adjust size as needed */
+  width: 30px; /* Adjust size as needed */
   height: auto;
 }
 .navbar a {
