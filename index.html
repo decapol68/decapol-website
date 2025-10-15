@@ -50,21 +50,19 @@
   <h2>Contact Us</h2>
   <p>We’d love to hear from you. Please fill out the form below and we’ll get back to you soon.</p>
 
-  <form
-  action="https://formspree.io/f/xjkajajw"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
+ <form action="https://formspree.io/f/xjkajajw" method="POST" class="contact-form">
+  <label for="name">Full Name</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="email">Email Address</label>
+  <input type="email" id="email" name="_replyto" required>
+
+  <label for="message">Your Question</label>
+  <textarea id="message" name="message" rows="5" required></textarea>
+
+  <button type="submit">Send Message</button>
 </form>
+
 </section>
 
 
