@@ -15,11 +15,25 @@ body {
 
 /* Header & Logo Section */
 header.hero {
-  background-color: #4C1D95; /* dark violet */
-  color: black;
+  background-color: #F3E8FF; /* lavender background */
+  color: #000000; /* black text */
   text-align: center;
-  padding: 30px 20px;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  padding: 40px 20px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+header.hero h1 {
+  color: #000;
+  font-weight: 800;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.tagline {
+  color: #4C1D95; /* deep violet tagline */
+  font-weight: 600;
+  margin-top: 4px;
+  font-style: italic;
 }
 
 .logo-container {
