@@ -1,102 +1,103 @@
-/* ============================
-   DECAPOL SOLUTIONS LIMITED
-   Website Styling - Lavender Theme
-   ============================ */
+/* ================================
+   Decapol Solutions Limited Website
+   Refined Modern Lavender Theme
+   ================================ */
 
-/* Base reset and typography */
-body {
+/* Global Reset and Base Styling */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #F3E8FF; /* light lavender background */
-  color: #2E1065; /* deep violet text */
-  line-height: 1.6;
+  background-color: #F9F8FF; /* soft lavender */
+  color: #222;
+  line-height: 1.7;
 }
 
-/* Header & Logo Section */
+/* ================================
+   HEADER AND NAVIGATION
+   ================================ */
 header.hero {
-  background-color: #F3E8FF; /* lavender background */
-  color: #000000; /* black text */
-  text-align: center;
-  padding: 40px 20px;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
-}
-
-header.hero h1 {
+  background-color: #F3E8FF;
   color: #000;
-  font-weight: 800;
-  font-size: 1.8rem;
-  margin: 0;
-}
-
-.tagline {
-  color: #4C1D95; /* deep violet tagline */
-  font-weight: 600;
-  margin-top: 4px;
-  font-style: italic;
+  text-align: center;
+  padding: 30px 20px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
 }
 
 .logo-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 12px;
   flex-wrap: wrap;
 }
 
 .logo {
-  width: 55px; /* perfect balance */
+  width: 55px;
   height: auto;
-  border-radius: 6px;
+  border-radius: 8px;
 }
 
 header.hero h1 {
-  font-size: 1.8rem;
-  margin: 0;
-  font-weight: 700;
+  color: #000;
+  font-size: 1.9rem;
+  font-weight: 800;
 }
 
 .tagline {
+  color: #4C1D95;
+  font-weight: 600;
   font-style: italic;
-  color: #C4B5FD;
   margin-top: 4px;
 }
 
-/* Navigation bar */
 .navbar {
-  margin-top: 15px;
   text-align: center;
+  margin-top: 15px;
 }
 
 .navbar a {
-  color: white;
+  color: #000;
   text-decoration: none;
-  margin: 0 15px;
-  font-weight: 500;
+  margin: 0 14px;
+  font-weight: 600;
   transition: color 0.3s ease;
 }
 
 .navbar a.active,
 .navbar a:hover {
-  color: #06B6D4; /* cyan highlight */
+  color: #4C1D95;
 }
 
-/* Section titles */
+/* ================================
+   HEADINGS
+   ================================ */
+h1, h2, h3, h4 {
+  color: #000;
+  font-weight: 800;
+}
+
 h2 {
   border-bottom: 3px solid #8A5AD9;
   display: inline-block;
-  padding-bottom: 6px;
   margin-bottom: 20px;
+  padding-bottom: 5px;
 }
 
-/* Generic section styling */
+/* ================================
+   SECTIONS
+   ================================ */
 section {
   padding: 60px 20px;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
 }
 
-/* Mission and Vision split layout */
+/* Mission & Vision */
 .mission-vision {
   display: flex;
   flex-wrap: wrap;
@@ -104,33 +105,34 @@ section {
   justify-content: center;
 }
 
-.mission,
-.vision {
+.mission, .vision {
   flex: 1;
-  min-width: 300px;
-  background-color: white;
+  min-width: 320px;
+  background-color: #fff;
   border-radius: 10px;
   padding: 25px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.05);
 }
 
-/* Pillars of Strength */
+/* ================================
+   PILLARS OF STRENGTH
+   ================================ */
 .values {
   text-align: center;
 }
 
 .pillars {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 25px;
-  margin-top: 25px;
+  margin-top: 30px;
 }
 
 .pillar {
   background-color: white;
   border: 2px solid #E9D5FF;
-  padding: 25px;
   border-radius: 12px;
+  padding: 25px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.08);
   text-align: center;
   transition: transform 0.3s ease;
@@ -141,6 +143,168 @@ section {
   border-color: #8A5AD9;
 }
 
-.pillar h3 {
+.center {
+  border: 2px solid #06B6D4;
+  background: linear-gradient(145deg, #E9D5FF, #CFFAFE);
+}
+
+/* ================================
+   OUR TEAM SECTION
+   ================================ */
+.team-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.team-intro {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  color: #444;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-items: center;
+}
+
+.team-member {
+  background-color: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 320px;
+}
+
+.team-member:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.team-member img {
+  width: 100%;
+  max-width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.team-member h3 {
+  margin-bottom: 5px;
+  color: #000;
+}
+
+.role {
   color: #4C1D95;
-  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* ================================
+   CONTACT SECTION
+   ================================ */
+.contact {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  padding: 40px 25px;
+}
+
+.contact p {
+  color: #555;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 25px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-form label {
+  font-weight: 700;
+  text-align: left;
+  color: #000;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 14px;
+  border-radius: 6px;
+  border: 1px solid #D8B4FE;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #8A5AD9;
+  outline: none;
+}
+
+.contact-form button {
+  background-color: #4C1D95;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  padding: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #6D28D9;
+  transform: translateY(-2px);
+}
+
+/* ================================
+   FOOTER
+   ================================ */
+footer {
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  padding: 25px 15px;
+  font-size: 0.9rem;
+  margin-top: 60px;
+}
+
+/* ================================
+   RESPONSIVE DESIGN
+   ================================ */
+@media (max-width: 992px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .mission-vision {
+    flex-direction: column;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  header.hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .logo {
+    width: 45px;
+  }
+
+  section {
+    padding: 40px 15px;
+  }
+}
